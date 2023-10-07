@@ -1,11 +1,11 @@
 import Banner from "./shared/Banner/Banner";
-import Navbar from "./shared/Navbar/Navbar";
+// import Navbar from "./shared/Navbar/Navbar";
 
 
 const Home = () => {
     return (
         <div className="">
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             <Banner></Banner>
             <h2>This is home</h2>
         </div>

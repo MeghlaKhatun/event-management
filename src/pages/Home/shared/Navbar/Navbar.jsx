@@ -10,9 +10,8 @@ const Navbar = () => {
     </>
 
     return (
-
-       
-      <div className="navbar bg-base-100 my-12 max-w-7xl mx-auto">
+   
+      <div className="navbar  py-12 max-w-7xl mx-auto">
         <div className="  navbar-start">
             <nav className="dropdown">
 
@@ -25,18 +24,18 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            <a className=" normal-case text-2xl flex items-end italic font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90%  "><span className="text-5xl  font-extrabold italic ">S</span>OCIAL <span className="text-5xl font-extrabold italic ml-3">E</span>VENT</a>
+            <a href="#" className=" normal-case text-2xl flex items-end italic font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90%  "><span className="text-5xl  font-extrabold italic ">S</span>OCIAL <span className="text-5xl font-extrabold italic ml-3">E</span>VENT</a>
 
         </div>
 
 
         <nav className="navbar-center hidden lg:flex">
-            <ul className=" menu-horizontal flex gap-6 font-medium text-[18px]">
+            <ul className=" menu-horizontal flex gap-6 text-amber-500 font-medium text-[18px]">
             {navLinks}
             </ul>
         </nav>
         <div className="navbar-end">
-            <Link to="/login" className="py-2 px-4 hover:bg-[#4c0a7be6] hover:text-white font-semibold text-[18px] rounded-lg">Login</Link>
+            <Link to="/login" className="py-2 px-4 hover:bg-[#4c0a7be6] text-amber-500  hover:text-white font-semibold text-[18px] rounded-lg">Login</Link>
         </div>
         </div>
             

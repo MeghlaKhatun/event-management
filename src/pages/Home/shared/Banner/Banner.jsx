@@ -1,9 +1,13 @@
+import Navbar from "../Navbar/Navbar";
 
 
 const Banner = () => {
     return (
-        <div className="hero h-screen" style={{backgroundImage: 'url(https://i.ibb.co/TbGBm0x/dsgn-23.jpg)'}}>
-        <div className="hero-overlay bg-opacity-60"></div>
+      
+      
+        <div className="w-full h-full" style={{backgroundImage: 'url(https://i.ibb.co/TbGBm0x/dsgn-23.jpg)'}}>
+        <Navbar></Navbar>
+        <div className=""></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
@@ -12,6 +16,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+     
     );
 };
 
