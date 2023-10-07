@@ -41,7 +41,7 @@ const Register = () => {
         <Navbar></Navbar>
         <h2 className="text-3xl text-amber-600 text-center font-bold">Please Registration</h2>
 
-          <form onSubmit={handleCreateUser} className=" md:w-1/2 mx-auto">
+          <form onSubmit={handleCreateUser} className=" md:w-1/2 lg:w-2/5 mx-auto">
             <div className="form-control">
             <label className="label">
                 <span className="label-text">Name</span>

@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import Navbar from "../Home/shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from 'sweetalert2'
 
 
 const Login = () => {
 
-    const{createUser}=useContext(AuthContext);
+    const{signIn}=useContext(AuthContext);
 
     const handleLogIn=e=>{
         e.preventDefault();
@@ -14,17 +15,33 @@ const Login = () => {
         const password=e.target.password.value;
         console.log(email,password)
 
-        // create user
+        // sign In
+        signIn(email,password)
+        .then(result=>{
+            console.log(result.user);
+            Swal.fire(
+                'Good job!',
+                'LogIn Successful',
+                'success'
+              )
+        })
+        .catch(error=>{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: (`${error.message}`),
+              })
+        })
         
     }
 
 
     return (
-        <div className="max-w-7xl mx-auto">
+ <div className="max-w-7xl mx-auto">
         <Navbar></Navbar>
         <h2 className="text-3xl text-amber-600 text-center font-bold">Please Login</h2>
 
-          <form onSubmit={handleLogIn} className=" md:w-1/2 mx-auto">
+          <form onSubmit={handleLogIn} className=" md:w-1/2 lg:w-2/5 mx-auto">
             <div className="form-control">
             <label className="label">
                 <span className="label-text">Email</span>
