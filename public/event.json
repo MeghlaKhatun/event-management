@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/L8hnnwD/wedding.jpg",
+      "title": "Wedding",
+      "price": 25000,
+      "short_description": "A wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes."
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/9gzz0Nz/engagement.jpg",
+      "title": "Engagement",
+      "price": 15000,
+      "short_description": "Engagement refers to the ability of a brand to generate engagement with its consumers through persistent and stable relationships. The better our relationship with the client, the better we can get to know them and provide a differential value that improves our positioning and perception as a brand."
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/1bJcwvF/anniversary.jpg",
+      "title": "Anniversary",
+      "price": 20000,
+      "short_description": "No matter if you've been dating for a few years or married for a decade, an anniversary is something to celebrate. It's a day that holds a special place in your heart (and calendar) because it marks your decision to spend your life together."
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/yRPMjC7/birthday.jpg",
+      "title": "Birthday",
+      "price": 10000,
+      "short_description": "A birthday is the anniversary of the birth of a person, or figuratively of an institution. Birthdays of people are celebrated in numerous cultures, often with birthday gifts, birthday cards, a birthday party, or a rite of passage. Birthday cakes are very commonplace in birthday celebrations."
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/68yzKTG/retirement.jpg",
+      "title": "Retirement",
+      "price": 12000,
+      "short_description": "Retirement refers to the time of life when one chooses to permanently leave the workforce behind. The traditional retirement age is 65 in the United States and most other developed countries, many of which have some kind of national pension or benefits system in place to supplement retirees' incomes."
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/d53Cj87/baby-shower.jpg",
+      "title": "Baby Shower",
+      "price": 8000,
+      "short_description": "A baby shower is one of the most traditional ways in which your loved ones come together to express their joy at your pregnancy. It's a time for friends and family to share time with the expectant parents and to “shower” them with gifts, love, and good wishes before the birth."
+    }
+  ]
