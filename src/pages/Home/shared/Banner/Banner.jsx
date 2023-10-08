@@ -5,7 +5,7 @@ const Banner = () => {
     return (
       
       
-        <div className="w-full h-screen mb-20" style={{backgroundImage: 'url(https://i.ibb.co/drjqj6L/pexels-asad-photo-maldives-169198.jpg)',objectFit:"cover"}}>
+        <div className="w-full h-screen mb-8 md:mb-10 lg:mb-20 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/drjqj6L/pexels-asad-photo-maldives-169198.jpg)',objectFit:"cover"}}>
           <Navbar></Navbar>
         <div className=""></div>
         <div className="hero-content text-center text-neutral-content">

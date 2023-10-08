@@ -20,13 +20,13 @@ const Navbar = () => {
     }
 
     return (
-   
-      <div className="navbar  py-12 max-w-7xl mx-auto">
-        <div className="  navbar-start">
+   <div className="bg-black bg-opacity-50">
+      <div className="navbar py-4 md:py-6 lg:py-12 max-w-7xl mx-auto px-4 md:px-10 lg:px-0">
+        <div className="navbar-start">
             <nav className="dropdown">
 
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-3xl text-white font-extrabold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
 
                 <ul tabIndex={0} className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            <a href="#" className=" normal-case text-2xl flex items-end italic font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90%  "><span className="text-5xl  font-extrabold italic ">S</span>OCIAL <span className="text-5xl font-extrabold italic ml-3">E</span>VENT</a>
+            <a href="#" className="flex items-end normal-case text-[18px] md:text-xl ml-[70px] md:ml-[200px] lg:ml-0 text-2xl lg:text-3xl  italic md:font-bold lg:font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#ff0000] to-[#FF8938]  "><span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ">S</span>OCIAL <span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ml-3">E</span>VENT</a>
 
         </div>
 
@@ -46,9 +46,9 @@ const Navbar = () => {
         </nav>
         <div className="navbar-end">
 
-            <div>
+            <div className="flex justify-end mr-2 ">
                 {
-                    user?.photoURL && <img src={user.photoURL} className="w-1/2 rounded-full" alt="" />
+                    user?.photoURL && <img src={user.photoURL} className="w-1/3 lg:w-1/2  rounded-full" alt="" />
                 }
             </div>
 
@@ -56,20 +56,20 @@ const Navbar = () => {
             {
                 user ?  
                 <div >                  
-                <Link onClick={handleLogOut} className="py-2 px-4 bg-[#4c0a7be6] text-white font-semibold text-[18px] rounded-lg">Sign Out</Link>
+                <Link onClick={handleLogOut} className="py-2 px-4 bg-[#4c0a7be6] text-white font-medium md:font-semibold text-[14px] md:text-[16px] lg:text-[18px] rounded-lg">Sign Out</Link>
                 </div>
                 :
                 <div>
                     
-                <Link to="/login" className="py-2 px-4 bg-[#4c0a7be6] text-white font-semibold text-[18px] rounded-lg">Login</Link>
+                <Link to="/login" className="py-2 px-4 bg-[#4c0a7be6] text-white font-medium md:font-semibold text-[14px] md:text-[16px] lg:text-[18px] rounded-lg">Login</Link>
                 </div>
             }
             
            
         </div>
-        </div>
+     </div>
             
-       
+   </div>   
         
           
        

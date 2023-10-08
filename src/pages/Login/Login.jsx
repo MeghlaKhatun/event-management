@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Home/shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from 'sweetalert2'
-import { FaGoogle } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 
 const Login = () => {
 
     const{signIn,googleLogIn}=useContext(AuthContext);
+    const location=useLocation();
+    console.log(location);
+    const navigate=useNavigate()
 
     const handleLogIn=e=>{
         e.preventDefault();
@@ -21,11 +24,14 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
             console.log(result.user);
+            navigate(location.state ? location.state : "/")
             Swal.fire(
                 'Good job!',
                 'LogIn Successful',
                 'success'
               )
+              navigate(location.state ? location.state : "/")
+        
         })
         .catch(error=>{
             Swal.fire({
@@ -49,6 +55,7 @@ const Login = () => {
                 'Google LogIn Successful',
                 'success'
               )
+              navigate(location.state ? location.state : "/")
         })
         .catch(error=>{
             console.error(error);
@@ -65,10 +72,10 @@ const Login = () => {
   <div className="w-full  pb-20" style={{backgroundImage: 'url(https://i.ibb.co/4YpVdgF/5e5f43a4ca3f03151e4de26046c72b99.jpg)'}}>
         
         <Navbar></Navbar>
-    <div className="max-w-7xl mx-auto py-40">
+    <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-40 px-10">
        <div className="bg-white max-w-md mx-auto p-10 rounded-lg shadow-2xl">
 
-        <h2 className="text-3xl text-amber-600 text-center font-bold  ">Please Login</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-[#ff0000] to-[#FF8938] text-center font-bold  ">Please Login</h2>
 
           <form onSubmit={handleLogIn} className=" mx-auto ">
             
@@ -88,18 +95,18 @@ const Login = () => {
 
             <div className="my-4 flex gap-2">
                 <input type="checkbox" name="terms" id="terms" />
-                <label htmlFor="terms">Accepted our <a href="#">terms and conditions</a></label>
+                <label htmlFor="terms">Accepted our <a href="#">terms </a></label>
             </div>
 
             <div className="form-control mt-6">
-                <button className="py-4 rounded-lg bg-[#4c0a7be6] text-white font-bold">Login</button>
+                <button className="py-2 md:py-4 rounded-lg bg-gradient-to-r from-[#ff0000] to-[#FF8938] hover:bg-gradient-to-r hover:from-[#FFF] hover:to-[#FFF]  text-white hover:text-[#FF8938] border-2 hover:border-[#FF8938] font-bold">Login</button>
             </div>
         </form>
-        <p className=" mt-4 font-medium text-center">Do not Have An Account ? please <Link className="text-red-600" to="/register">Register</Link> </p>
+        <p className=" mt-4 font-medium text-center">Do not Have An Account ? please <Link className="text-[rgb(255,127,42)] hover:underline" to="/register">Register</Link> </p>
 
                 {/* google login button */}
                 <div className="flex justify-center mt-6">
-               <button onClick={handleGoogleLogIn} className="py-4 px-10 border-2 rounded-lg   bg-[#4c0a7be6] text-white font-bold flex items-center gap-3"><FaGoogle></FaGoogle> Login with Google</button>
+               <button onClick={handleGoogleLogIn} className="py-2 md:py-4 px-10 bg-gradient-to-r from-[#ff0000] to-[#FF8938] hover:bg-gradient-to-r hover:from-[#FFF] hover:to-[#FFF]  text-white hover:text-[#FF8938] border-2 hover:border-[#FF8938] rounded-lg font-bold flex items-center gap-3"><FcGoogle className="text-2xl"></FcGoogle> Login with Google</button>
                </div>
             
 

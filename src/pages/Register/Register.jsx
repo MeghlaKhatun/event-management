@@ -64,14 +64,14 @@ const Register = () => {
   <div className="w-full h-full pb-20" style={{backgroundImage: 'url(https://i.ibb.co/4YpVdgF/5e5f43a4ca3f03151e4de26046c72b99.jpg)'}}>
         
         <Navbar></Navbar>
-    <div className="max-w-7xl mx-auto py-40">
+    <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-40 px-10">
         
        <div className="bg-white max-w-md mx-auto p-10 rounded-lg shadow-2xl">
         {
             checkPassword && <p className="text-xl font-semibold text-red-700 mb-6">{checkPassword}</p>
         }
 
-        <h2 className="text-3xl text-amber-600 text-center font-bold  ">Please Registration</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-[#ff0000] to-[#FF8938] text-center font-bold  ">Please Registration</h2>
 
           <form onSubmit={handleCreateUser} className=" mx-auto ">
             <div className="form-control">
@@ -97,15 +97,15 @@ const Register = () => {
 
             <div className="my-4 flex gap-2">
                 <input type="checkbox" name="terms" id="terms" />
-                <label htmlFor="terms">Accepted our <a href="#">terms and conditions</a></label>
+                <label htmlFor="terms">Accepted our <a href="#">terms </a></label>
             </div>
 
 
             <div className="form-control mt-6">
-                <button className="py-4 rounded-lg bg-[#4c0a7be6] text-white font-bold">Registration</button>
+                <button className="py-2 md:py-4 bg-gradient-to-r from-[#ff0000] to-[#FF8938] hover:bg-gradient-to-r hover:from-[#FFF] hover:to-[#FFF]   hover:text-[#FF8938] border-2 hover:border-[#FF8938] text-white rounded-lg font-bold">Registration</button>
             </div>
         </form>
-        <p className="text-[16px] mt-4 font-semibold text-center">Already Have An Account ? please <Link className="text-red-600" to="/Login">Login</Link> </p>
+        <p className="text-[16px] mt-4 font-semibold text-center">Already Have An Account ? please <Link className="text-[rgb(255,127,42)] hover:underline" to="/Login">Login</Link> </p>
 
        </div>
 
