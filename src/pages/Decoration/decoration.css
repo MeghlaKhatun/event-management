@@ -1,0 +1,42 @@
+
+  .port_image {
+    position: relative;
+    overflow: hidden;
+}
+
+  .port_image:hover .overlay {
+    opacity: 1;
+    right: 0;
+}
+.port_image:hover .overlay1 {
+    opacity: 1;
+    left: 0;
+}
+
+  .overlay {
+    position: absolute;
+    top: 0%;
+    right: -100%;
+    background: rgba(242, 101, 34, .8);
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay1 {
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    background: rgba(242, 101, 34, .8);
+    width: 50%;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.over {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    display: flex;
+}

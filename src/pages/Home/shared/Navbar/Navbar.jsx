@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            <a href="#" className="flex items-end normal-case text-[18px] md:text-xl ml-[70px] md:ml-[200px] lg:ml-0 text-2xl lg:text-3xl  italic md:font-bold lg:font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#ff0000] to-[#FF8938]  "><span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ">S</span>OCIAL <span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ml-3">E</span>VENT</a>
+            <a href="#" className="flex items-end normal-case text-[18px] md:text-xl ml-[60px] md:ml-[200px] lg:ml-0 text-2xl text-white lg:text-3xl  italic md:font-bold lg:font-extrabold  "><span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ">S</span>OCIAL <span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ml-3">E</span>VENT</a>
 
         </div>
 
