@@ -1,13 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import '../Navbar/Navbar.css'
+import { useContext } from "react";
+import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const Navbar = () => {
+    const {user,logOut}=useContext(AuthContext)
 
     const navLinks=<>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/login">Login</NavLink></li>
+    <li><NavLink to={"/details"}>Details</NavLink></li>
     <li><NavLink to="/register">Registration</NavLink></li>
     </>
+
+    // signOut
+    const handleLogOut=()=>{
+        logOut()
+        .then()
+        .catch()
+    }
 
     return (
    
@@ -30,12 +40,32 @@ const Navbar = () => {
 
 
         <nav className="navbar-center hidden lg:flex">
-            <ul className=" menu-horizontal flex gap-6 text-amber-500 font-medium text-[18px]">
+            <ul className=" menu-horizontal flex gap-6 text-white font-medium text-[18px]">
             {navLinks}
             </ul>
         </nav>
         <div className="navbar-end">
-            <Link to="/login" className="py-2 px-4 hover:bg-[#4c0a7be6] text-amber-500  hover:text-white font-semibold text-[18px] rounded-lg">Login</Link>
+
+            <div>
+                {
+                    user?.photoURL && <img src={user.photoURL} className="w-1/2 rounded-full" alt="" />
+                }
+            </div>
+
+
+            {
+                user ?  
+                <div >                  
+                <Link onClick={handleLogOut} className="py-2 px-4 bg-[#4c0a7be6] text-white font-semibold text-[18px] rounded-lg">Sign Out</Link>
+                </div>
+                :
+                <div>
+                    
+                <Link to="/login" className="py-2 px-4 bg-[#4c0a7be6] text-white font-semibold text-[18px] rounded-lg">Login</Link>
+                </div>
+            }
+            
+           
         </div>
         </div>
             
