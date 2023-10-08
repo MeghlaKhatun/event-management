@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "./shared/Banner/Banner";
 import Card from "./shared/Card/Card";
 import Decoration from "../Decoration/Decoration";
+import Footer from "./shared/Footer/Footer";
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
 
             {/* end cards section */}
             <Decoration></Decoration>
+            <Footer></Footer>
 
         </div>
     );
