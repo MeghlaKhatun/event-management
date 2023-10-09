@@ -3,6 +3,7 @@ import Banner from "./shared/Banner/Banner";
 import Card from "./shared/Card/Card";
 import Decoration from "../Decoration/Decoration";
 import Footer from "./shared/Footer/Footer";
+import NextEvent from "./shared/nextBlog/NextEvent";
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
 
             {/* end cards section */}
             <Decoration></Decoration>
+            <NextEvent></NextEvent>
             <Footer></Footer>
 
         </div>

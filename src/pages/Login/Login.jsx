@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Home/shared/Navbar/Navbar";
-import { useContext } from "react";
+import { useContext} from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from 'sweetalert2'
 import { FcGoogle } from 'react-icons/fc';
@@ -19,14 +19,14 @@ const Login = () => {
         const password=e.target.password.value;
         console.log(email,password)
 
-
+         
         // sign In
         signIn(email,password)
         .then(result=>{
             console.log(result.user);
             navigate(location.state ? location.state : "/")
             Swal.fire(
-                'Good job!',
+                'Success!',
                 'LogIn Successful',
                 'success'
               )
@@ -51,7 +51,7 @@ const Login = () => {
         .then(result=>{
             console.log(result.user);
             Swal.fire(
-                'Good job!',
+                'Success!',
                 'Google LogIn Successful',
                 'success'
               )
@@ -91,11 +91,6 @@ const Login = () => {
                     <span className="label-text text-white text-[18px]">Password</span>
                 </label>
                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-            </div>
-
-            <div className="my-4 flex gap-2">
-                <input type="checkbox" name="terms" id="terms" />
-                <label htmlFor="terms">Accepted our <a href="#">terms </a></label>
             </div>
 
             <div className="form-control mt-6">

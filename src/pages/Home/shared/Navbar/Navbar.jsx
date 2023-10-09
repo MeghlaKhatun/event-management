@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import '../Navbar/Navbar.css'
+import '../../shared/Navbar/Navbar.css'
 import { useContext } from "react";
 import { AuthContext } from "../../../../Provider/AuthProvider";
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            <a href="#" className="flex items-end normal-case text-[18px] md:text-xl ml-[60px] md:ml-[200px] lg:ml-0 text-2xl text-white lg:text-3xl  italic md:font-bold lg:font-extrabold  "><span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ">S</span>OCIAL <span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ml-3">E</span>VENT</a>
+            <a href="#" className="flex items-end normal-case text-[18px] md:text-xl md:ml-[200px] lg:ml-0 text-2xl text-white lg:text-3xl  italic md:font-bold lg:font-extrabold  "><span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ">S</span>OCIAL <span className="text-2xl md:text-4xl lg:text-5xl md:font-bold lg:font-extrabold italic ml-3">E</span>VENT</a>
 
         </div>
 
@@ -46,10 +46,20 @@ const Navbar = () => {
         </nav>
         <div className="navbar-end">
 
-            <div className="flex justify-end mr-2 ">
+            <div className="flex flex-col-reverse justify-center lg:flex-row md:mr-2 lg:mr-0 lg:gap-4 items-center">
+
+            <div className="flex justify-center">
+                {
+                    user?.displayName && <p className="text-white text-[12px] md:text-[14px] lg:text-[16px]">{user.displayName}</p>
+                }
+            </div>
+
+            <div className="flex justify-center">
+                
                 {
                     user?.photoURL && <img src={user.photoURL} className="w-1/3 lg:w-1/2  rounded-full" alt="" />
                 }
+            </div>
             </div>
 
 
