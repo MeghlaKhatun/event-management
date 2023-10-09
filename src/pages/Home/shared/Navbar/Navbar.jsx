@@ -10,9 +10,8 @@ const Navbar = () => {
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/review">Review</NavLink></li>
     <li><NavLink to="/Blog">Blog</NavLink></li>
-    <li><NavLink to="/register">Registration</NavLink></li>
+   <li><NavLink to="/register">Registration</NavLink></li>
     </>
-
     // signOut
     const handleLogOut=()=>{
         logOut()

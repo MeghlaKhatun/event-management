@@ -1,16 +1,15 @@
 import { useContext, useState } from "react";
 import Navbar from "../Home/shared/Navbar/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
 
-    const {createUser,user}=useContext(AuthContext);
-    const navigate=useNavigate()
-
+    const {createUser}=useContext(AuthContext);
+    
     const [checkPassword,setCheckPassword]=useState("")
     
 
@@ -40,25 +39,30 @@ const Register = () => {
             setCheckPassword ("Please fulfil our terms");
             return;
         }
-
+       
         // create user
         createUser(email,password)
         .then(result=>{
             console.log(result.user);
+           
             Swal.fire(
                 'Good job!',
                 'Registration Successful',
                 'success'
               );
-              if(user !==null){
-                navigate("/")
-            }
+
+              
+            
+
               updateProfile(result.user,{
                 displayName:name,
                 photoURL:"https://i.ibb.co/PxP4X7d/user.png"
               })
               .then(()=>console.log("profile updated"))
               .catch()
+
+              
+    
         })
         .catch(error=>{
             console.error(error);
