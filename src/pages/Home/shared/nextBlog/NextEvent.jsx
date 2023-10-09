@@ -1,5 +1,16 @@
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 const NextEvent = () => {
+
+    useEffect(()=>{
+        AOS.init({duration: 2000})
+    },[])
+
+
     return (
  <div className="max-w-7xl mx-auto">
             <h2 className='text-center  bg-clip-text text-transparent  bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90% decoration-wavy text-2xl md:text-3xl lg:text-5xl  font-extrabold italic mt-8 mb-10'>Next Event</h2>
@@ -9,7 +20,7 @@ const NextEvent = () => {
 
         <div className="carousel w-full h-[60vh] bg-black bg-opacity-50">
             
-            <div id="slide1" className="carousel-item relative w-full bg-no-repeat bg-cover " style={{backgroundImage: 'url(https://i.ibb.co/HFZnKpX/vaibhav-nagare-0ci9am-l-Dk-unsplash.jpg)'}}>
+            <div  data-aos="flip-up" id="slide1" className="carousel-item relative w-full bg-no-repeat bg-cover " style={{backgroundImage: 'url(https://i.ibb.co/HFZnKpX/vaibhav-nagare-0ci9am-l-Dk-unsplash.jpg)'}}>
 
                     <div className="flex justify-center w-1/2 mx-auto items-center">
                         <div>
@@ -28,7 +39,7 @@ const NextEvent = () => {
 
 
 
-            <div id="slide2" className="carousel-item relative w-full bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/LrqXXgs/pia-kamp-iacr-F-f-Hr08-unsplash.jpg)'}}>
+            <div data-aos="flip-up" id="slide2" className="carousel-item relative w-full bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/LrqXXgs/pia-kamp-iacr-F-f-Hr08-unsplash.jpg)'}}>
 
                   <div className="flex justify-center w-1/2 mx-auto items-center">
                         <div>
@@ -44,7 +55,7 @@ const NextEvent = () => {
             </div> 
     
 
-            <div id="slide3" className="carousel-item relative w-full bg-black bg-opacity-50 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/VT4zXwh/wedding-1404620-1280.jpg)'}}>
+            <div data-aos="flip-up" id="slide3" className="carousel-item relative w-full bg-black bg-opacity-50 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/VT4zXwh/wedding-1404620-1280.jpg)'}}>
 
                     <div className="flex justify-center w-1/2 mx-auto items-center">
                         <div>

@@ -4,6 +4,7 @@ import moment from 'moment';
 import { GoClock } from "react-icons/go";
 
 
+
 const CardDetails = () => {
 
     const cardDetails=useLoaderData();
@@ -11,11 +12,16 @@ const CardDetails = () => {
     const card=cardDetails?.find(card=>card.id == id);
     const {details,title ,img,price}=card;
 
+    
+
     return (
         <div>
             <Navbar></Navbar>
-            <div className="max-w-7xl mx-auto mt-[83px] mb-16 px-10 lg:px-0">
-                <div >
+            <div className="max-w-7xl mx-auto mt-[83px] mb-16 px-10 lg:px-0" >
+
+
+                <div>
+
                     <img className="w-full h-[70vh] rounded-lg" src={img} alt="" />
                         
                     <div className="flex justify-between items-center mt-8 md:mt-[56px] mb-6">
