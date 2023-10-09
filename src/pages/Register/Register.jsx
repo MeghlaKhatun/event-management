@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import Navbar from "../Home/shared/Navbar/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
 
@@ -9,8 +9,8 @@ import { updateProfile } from "firebase/auth";
 const Register = () => {
 
     const {createUser}=useContext(AuthContext);
-    
-    const [checkPassword,setCheckPassword]=useState("")
+    const [checkPassword,setCheckPassword]=useState("");
+    const navigate=useNavigate();
     
 
     const handleCreateUser=e=>{
@@ -51,7 +51,7 @@ const Register = () => {
                 'success'
               );
 
-              
+              navigate("/")
             
 
               updateProfile(result.user,{
