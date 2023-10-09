@@ -3,6 +3,7 @@ import Navbar from "../Home/shared/Navbar/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -46,7 +47,13 @@ const Register = () => {
                 'Good job!',
                 'Registration Successful',
                 'success'
-              )
+              );
+              updateProfile(result.user,{
+                displayName:name,
+                photoURL:"https://i.ibb.co/PxP4X7d/user.png",
+              })
+              .then(()=>console.log("profile updated"))
+              .catch()
         })
         .catch(error=>{
             console.error(error);

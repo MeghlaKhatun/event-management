@@ -6,6 +6,7 @@ import Register from "../pages/Register/Register";
 import CardDetails from "../pages/CardDetails/CardDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorElement from "../pages/ErrorElement/ErrorElement";
+import Testimonial from "../pages/Testimonisl/Testimonial";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
                 path:"/card/:id",
                 element:<PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
                 loader:()=>fetch("/event.json")
-            },      
+            },   
+            {
+                path:"/blog",
+                element:<PrivateRoute><Testimonial></Testimonial></PrivateRoute>
+            },   
             {
                 path:"/register",
                 element:<Register></Register>

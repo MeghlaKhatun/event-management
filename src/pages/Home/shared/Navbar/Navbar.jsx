@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const navLinks=<>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to={"/details"}>Details</NavLink></li>
+    <li><NavLink to={"/Blog"}>Blog</NavLink></li>
     <li><NavLink to="/register">Registration</NavLink></li>
     </>
 
@@ -46,7 +46,7 @@ const Navbar = () => {
         </nav>
         <div className="navbar-end">
 
-            <div className="flex flex-col-reverse justify-center lg:flex-row md:mr-2 lg:mr-0 lg:gap-4 items-center">
+            <div className="flex flex-col-reverse justify-center lg:flex-row mr-2 lg:gap-4 items-center">
 
             <div className="flex justify-center">
                 {
@@ -57,7 +57,7 @@ const Navbar = () => {
             <div className="flex justify-center">
                 
                 {
-                    user?.photoURL && <img src={user.photoURL} className="w-1/3 lg:w-1/2  rounded-full" alt="" />
+                    user?.photoURL && <img src={user.photoURL} className="w-[30px] h-[30px] rounded-full" alt="" />
                 }
             </div>
             </div>
