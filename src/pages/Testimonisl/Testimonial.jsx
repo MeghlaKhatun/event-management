@@ -19,7 +19,7 @@ const Testimonial = () => {
                 <div className="grid grid-cols-1 gap-8 px-10 lg:px-0 md:grid-cols-2 ">
 
                   <div data-aos="flip-left" className="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/R7r8kR3/bruce-mars-8-YG31-Xn4d-Sw-unsplash.jpg" alt="Movie"/></figure>
+                    <figure><img src="https://i.ibb.co/nj0wfny/bruce-mars-8-YG31-Xn4d-Sw-unsplash-11zon.jpg" alt="Movie"/></figure>
                     <div className="card-body">
                         <h2 className="card-title">Amazing Services</h2>
                         <p>All the services are amazing.....Keep it up.</p>
@@ -36,7 +36,7 @@ const Testimonial = () => {
                   </div>
 
                   <div  data-aos="flip-left"  className="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/d2MPPtf/jonas-kakaroto-KIPqvv-TOC1s-unsplash.jpg" alt="Movie"/></figure>
+                    <figure><img src="https://i.ibb.co/B2yk8bV/jonas-kakaroto-KIPqvv-TOC1s-unsplash-11zon.jpg" alt="Movie"/></figure>
                     <div className="card-body">
                         <h2 className="card-title">Wonderful services</h2>
                         <p>All the services are amazing.....Keep it up.</p>
@@ -53,7 +53,7 @@ const Testimonial = () => {
                   </div>
 
                   <div  data-aos="flip-left"  className="card  bg-base-100 shadow-xl">
-                    <figure ><img src="https://i.ibb.co/RPZQBr4/shipman-northcutt-sg-ZX15-Da8-YE-unsplash.jpg" alt="Movie"/></figure>
+                    <figure ><img src="https://i.ibb.co/YyFyWf0/shipman-northcutt-sg-ZX15-Da8-YE-unsplash-11zon.jpg" alt="Movie"/></figure>
                     <div className="card-body">
                         <h2 className="card-title">Awesome Services</h2>
                         <p>All the services are amazing.....Keep it up.</p>
@@ -71,7 +71,7 @@ const Testimonial = () => {
 
 
                   <div  data-aos="flip-left"  className="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/Wst1XZX/yogendra-singh-Hrp-YHch-Kb5-Y-unsplash.jpg" alt="Movie"/></figure>
+                    <figure><img src="https://i.ibb.co/cL4MNYr/yogendra-singh-Hrp-YHch-Kb5-Y-unsplash-11zon.jpg" alt="Movie"/></figure>
                     <div className="card-body">
                         <h2 className="card-title">Good Services</h2>
                         <p>All the services are amazing.....Keep it up.</p>

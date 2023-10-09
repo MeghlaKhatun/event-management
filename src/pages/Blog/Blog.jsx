@@ -8,12 +8,12 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto my-4 md:my-10">
             <div className="card glass">
                 <div className="">
-                    <img src="https://i.ibb.co/PMYZKSJ/amish-thakkar-BEdx-XAi-Rf-RM-unsplash.jpg" alt="car!"/>
+                    <img src="https://i.ibb.co/SxTXbR1/amish-thakkar-BEdx-XAi-Rf-RM-unsplash-11zon.jpg" alt="car!"/>
                 </div>
 
                     <div className="card-body">
 
-                                <h2 className="card-title text-xl md:text-2xl lg:text-4xl font-bold  bg-clip-text text-transparent  bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90%">Title:The Magic of Weddings: Celebrating Love and Unity </h2>
+                                <h2 className="card-title text-xl md:text-2xl lg:text-4xl font-bold  bg-clip-text text-transparent  bg-gradient-to-r from-indigo-700 from-10% via-sky-700 via-30% to-emerald-700 to-90%">The Magic of Weddings: Celebrating Love and Unity </h2>
                                 <p className="font-semibold md:font-bold text-[16px] md:text-[18px] lg:text-xl mt-4">A wedding is not just a ceremony; it is a magical celebration of love, unity, and the promise of a beautiful future together. It is  a day when two people embark on a journey that will shape the rest of their lives, and it is a day filled with joy, emotions, and unforgettable moments.</p>
 
                             <div>

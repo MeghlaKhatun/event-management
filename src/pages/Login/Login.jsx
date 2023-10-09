@@ -69,7 +69,7 @@ const Login = () => {
 
 
     return (
-  <div className="w-full  pb-20" style={{backgroundImage: 'url(https://i.ibb.co/4YpVdgF/5e5f43a4ca3f03151e4de26046c72b99.jpg)'}}>
+  <div className="w-full  pb-20 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/SxxmQzL/54321-11zon.png)'}}>
         
         <Navbar></Navbar>
     <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-40 px-10">

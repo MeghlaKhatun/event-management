@@ -20,7 +20,7 @@ const NextEvent = () => {
 
         <div className="carousel w-full h-[60vh] bg-black bg-opacity-50">
             
-            <div  data-aos="flip-up" id="slide1" className="carousel-item relative w-full bg-no-repeat bg-cover " style={{backgroundImage: 'url(https://i.ibb.co/HFZnKpX/vaibhav-nagare-0ci9am-l-Dk-unsplash.jpg)'}}>
+            <div  data-aos="flip-up" id="slide1" className="carousel-item relative w-full bg-no-repeat bg-cover " style={{backgroundImage: 'url(https://i.ibb.co/7KBGf3y/vaibhav-nagare-0ci9am-l-Dk-unsplash-11zon.jpg)'}}>
 
                     <div className="flex justify-center w-1/2 mx-auto items-center">
                         <div>
@@ -39,7 +39,7 @@ const NextEvent = () => {
 
 
 
-            <div data-aos="flip-up" id="slide2" className="carousel-item relative w-full bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/LrqXXgs/pia-kamp-iacr-F-f-Hr08-unsplash.jpg)'}}>
+            <div data-aos="flip-up" id="slide2" className="carousel-item relative w-full bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/WKn7GwP/pia-kamp-iacr-F-f-Hr08-unsplash-11zon.jpg)'}}>
 
                   <div className="flex justify-center w-1/2 mx-auto items-center">
                         <div>

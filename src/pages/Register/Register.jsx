@@ -1,16 +1,18 @@
 import { useContext, useState } from "react";
 import Navbar from "../Home/shared/Navbar/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
 
-    const {createUser}=useContext(AuthContext);
+    const {createUser,user}=useContext(AuthContext);
+    const navigate=useNavigate()
 
     const [checkPassword,setCheckPassword]=useState("")
+    
 
     const handleCreateUser=e=>{
         e.preventDefault();
@@ -48,9 +50,12 @@ const Register = () => {
                 'Registration Successful',
                 'success'
               );
+              if(user !==null){
+                navigate("/")
+            }
               updateProfile(result.user,{
                 displayName:name,
-                photoURL:"https://i.ibb.co/PxP4X7d/user.png",
+                photoURL:"https://i.ibb.co/PxP4X7d/user.png"
               })
               .then(()=>console.log("profile updated"))
               .catch()
@@ -68,7 +73,7 @@ const Register = () => {
 
     return (
 
-  <div className="w-full h-full pb-20" style={{backgroundImage: 'url(https://i.ibb.co/4YpVdgF/5e5f43a4ca3f03151e4de26046c72b99.jpg)'}}>
+  <div className="w-full h-full pb-20 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://i.ibb.co/SxxmQzL/54321-11zon.png)'}}>
         
         <Navbar></Navbar>
     <div className="max-w-7xl mx-auto py-16 md:py-20 lg:py-40 px-10">
@@ -87,6 +92,8 @@ const Register = () => {
                 </label>
                 <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
             </div>
+
+            
 
             <div className="form-control">
                 <label className="label">

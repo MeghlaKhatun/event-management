@@ -17,7 +17,7 @@ const Decoration = () => {
             <div className=" flex relative justify-center flex-col-reverse lg:flex-row px-10 lg:px-0">
 
                 <div data-aos="zoom-in" className='port_image w-full  md:w-1/2  mx-auto'>
-                    <img className="lg:w-full lg:h-[600px]" src="https://i.ibb.co/7gvwJvM/alexandra-gornago-Aqu-Jhsgxams-unsplash.jpg" alt="" />
+                    <img className="lg:w-full lg:h-[600px]" src="https://i.ibb.co/v3KwgZx/alexandra-gornago-Aqu-Jhsgxams-unsplash-11zon.jpg" alt="" />
 
                            <div className="overlay">
                                 <div className=" mt-10">
@@ -38,7 +38,7 @@ const Decoration = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div className='port_image ' data-aos="zoom-in">
-                        <img className="h-[300px]" src="https://i.ibb.co/qmBFsT6/123.png" alt="" />
+                        <img className="h-[300px]" src="https://i.ibb.co/FbTqYSt/123-11zon.png" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
@@ -57,7 +57,7 @@ const Decoration = () => {
                     </div>
 
                     <div className='port_image' data-aos="zoom-in">
-                        <img className="h-[300px]"  src="https://i.ibb.co/Zg9mg65/Screenshot-2023-10-08-184723.png" alt="" />
+                        <img className="h-[300px]"  src="https://i.ibb.co/HtPHPrh/Screenshot-2023-10-08-184723-11zon.png" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
@@ -77,7 +77,7 @@ const Decoration = () => {
                     </div>
 
                     <div className='port_image' data-aos="zoom-in">
-                        <img className="h-[300px]"  src="https://i.ibb.co/WDrM5WV/brides-couple-cutting-wedding-cake.jpg" alt="" />
+                        <img className="h-[300px]"  src="https://i.ibb.co/FHx2RGb/brides-couple-cutting-wedding-cake-11zon.jpg" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
@@ -99,7 +99,7 @@ const Decoration = () => {
                     
 
                     <div className='port_image' data-aos="zoom-in">
-                        <img className="h-[300px]"  src="https://i.ibb.co/BqzWp4b/classic-luxury-style-restaurant-with-tables-chairs.jpg" alt="" />
+                        <img className="h-[300px]"  src="https://i.ibb.co/M1JzqKG/classic-luxury-style-restaurant-with-tables-chairs-11zon.jpg" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
@@ -119,7 +119,7 @@ const Decoration = () => {
                     </div>
 
                     <div className='port_image' data-aos="zoom-in">
-                        <img className="h-[300px]" src="https://i.ibb.co/f2qt2Ft/magic-view-prepared-evening-restaurant.jpg" alt="" />
+                        <img className="h-[300px]" src="https://i.ibb.co/PYFNGkX/magic-view-prepared-evening-restaurant-11zon.jpg" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
@@ -139,7 +139,7 @@ const Decoration = () => {
                     </div>
 
                     <div className='port_image' data-aos="zoom-in">
-                        <img className="h-[300px]" src="https://i.ibb.co/tZdRZDx/login.png" alt="" />
+                        <img className="h-[300px]" src="https://i.ibb.co/wR3hv2S/login-11zon.png" alt="" />
 
                         <div className="overlay">
                                 <div className=" mt-10">
