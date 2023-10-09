@@ -7,6 +7,7 @@ import CardDetails from "../pages/CardDetails/CardDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorElement from "../pages/ErrorElement/ErrorElement";
 import Testimonial from "../pages/Testimonisl/Testimonial";
+import Blog from "../pages/Blog/Blog";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
             {
                 path:"/review",
                 element:<PrivateRoute><Testimonial></Testimonial></PrivateRoute>
-            },   
+            }, 
+            {
+                path:"/blog",
+                element:<PrivateRoute><Blog></Blog></PrivateRoute>
+            },  
             {
                 path:"/register",
                 element:<Register></Register>
