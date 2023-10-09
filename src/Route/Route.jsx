@@ -24,7 +24,7 @@ const router = createBrowserRouter([
                 loader:()=>fetch("/event.json")
             },   
             {
-                path:"/blog",
+                path:"/review",
                 element:<PrivateRoute><Testimonial></Testimonial></PrivateRoute>
             },   
             {
